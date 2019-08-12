@@ -1,4 +1,4 @@
-om# frozen_string_literal: true
+# frozen_string_literal: true
 
 jane = {
   first_name: "Jane",
@@ -31,7 +31,7 @@ jason = {
   employed: false,
   current_salary: 0.00,
   languages: ["C++", "Python"]
-p}
+}
 
 candidates = [jane, sara, jason]
 
