@@ -43,3 +43,16 @@ end
 
 avg = average_age(candidates)
 puts avg
+
+def language_screening(people, lang)
+  people.select { |person| person[:languages].map { |language| language.downcase}.include?(lang.downcase)}
+end
+
+python_people = language_screening(candidates, "Python")
+go_people = language_screening(candidates, "Go")
+javascript_people = language_screening(candidates, "javascript")
+
+puts python_people
+puts go_people
+puts javascript_people
+
