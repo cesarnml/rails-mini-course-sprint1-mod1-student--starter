@@ -36,3 +36,10 @@ jason = {
 candidates = [jane, sara, jason]
 
 puts candidates
+
+def average_age(people)
+  people.map { |person| person[:age] }.reduce(:+) / people.length.to_f
+end
+
+avg = average_age(candidates)
+puts avg
